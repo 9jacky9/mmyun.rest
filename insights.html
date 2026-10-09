@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>藏经阁 - 妙妙云行业洞见</title>
+  <style>
+    :root {
+      --bg-color: #fdfaf6;
+      --text-main: #2b2b2b;
+      --text-muted: #5c5c5c;
+      --accent: #b2453e;
+      --line-color: #dcd8d1;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "PingFang SC", "Microsoft YaHei", serif; background: var(--bg-color); color: var(--text-main); line-height: 1.7; background-image: radial-gradient(#e0ded8 1px, transparent 1px); background-size: 20px 20px; }
+    a { text-decoration: none; color: inherit; }
+    
+    header { position: sticky; top: 0; z-index: 100; background: rgba(253,250,246,0.95); backdrop-filter: blur(5px); padding: 15px 0; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--text-main); margin-bottom: 40px; }
+    .wrapper-nav { max-width: 1000px; margin: 0 auto; width: 100%; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; }
+    .logo-container { display: flex; align-items: center; font-size: 28px; font-weight: 900; letter-spacing: 2px; }
+    .logo-svg { width: 45px; height: 45px; margin-right: 15px; }
+
+    .nav-links { display: flex; gap: 25px; align-items: center; }
+    .nav-links a { color: var(--text-main); font-weight: bold; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-cta { padding: 8px 20px; background: var(--text-main); color: var(--bg-color) !important; border: 2px solid var(--text-main); border-radius: 4px; font-weight: bold; }
+    .nav-cta:hover { background: var(--accent); color: #fff !important; border-color: var(--accent); }
+    @media(max-width: 900px) { .nav-links a:not(.nav-cta) { display: none; } }
+
+    .wrapper { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+    .page-title { font-size: 2.8rem; margin-bottom: 15px; border-left: 6px solid var(--accent); padding-left: 15px; }
+    .page-desc { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 40px; padding-left: 21px; }
+    
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+    }
+    .article-card {
+      background: #fff;
+      border: 1px solid var(--line-color);
+      padding: 35px;
+      box-shadow: 4px 4px 0 var(--text-main);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .article-card:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 7px 7px 0 var(--accent);
+    }
+    .article-card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      border-bottom: 2px dashed var(--line-color);
+      padding-bottom: 15px;
+    }
+    .article-card h2 a {
+      color: var(--text-main) !important;
+      transition: color 0.2s;
+    }
+    .article-card h2 a:hover {
+      color: var(--accent) !important;
+    }
+    .article-card p {
+      color: var(--text-muted);
+      flex-grow: 1;
+      margin-bottom: 30px;
+    }
+    .read-more {
+      display: inline-block;
+      padding: 10px 25px;
+      border: 2px solid var(--text-main);
+      color: var(--text-main) !important;
+      font-weight: bold;
+      align-self: flex-start;
+      transition: 0.2s;
+    }
+    .read-more:hover {
+      background: var(--text-main);
+      color: #fff !important;
+    }
+    
+    footer { margin-top: 80px; padding: 40px 0; border-top: 2px solid var(--text-main); text-align: center; }
+    .footer-links { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+    .footer-links a { font-weight: bold; color: var(--text-main); }
+    .footer-links a:hover { color: var(--accent); }
+    p a, li a { color: var(--accent) !important; text-decoration: underline !important; font-weight: bold; text-underline-offset: 4px; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrapper-nav">
+      <a href="index.html" class="logo-container">
+        <a href="index.html" style="display:flex; align-items:center;">
+          <svg viewBox="0 0 100 100" class="logo-svg" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20,60 Q35,30 50,55 T80,40" stroke="var(--text-main)" stroke-width="6" fill="none" stroke-linecap="round" />
+            <path d="M30,80 Q50,70 70,85" stroke="var(--text-main)" stroke-width="4" fill="none" stroke-linecap="round" />
+            <circle cx="75" cy="25" r="8" fill="var(--accent)" />
+          </svg>
+          妙妙云
+        </a>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html#quality">品质保障</a>
+        <a href="index.html#streaming">流媒体</a>
+        <a href="index.html#pricing">入驻方案</a>
+        <a href="index.html#faq">疑问解答</a>
+        <a href="insights.html" style="color:var(--accent);">藏经阁</a>
+        <a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" class="nav-cta" rel="nofollow" target="_blank">即刻购买</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <h1 class="page-title">藏经阁：行业洞见与技术分享</h1>
+    <p class="page-desc">探索云计算、分布式架构以及妙妙云的最新技术演进与深度解析。</p>
+    
+    <div class="card-grid">
+      <article class="article-card">
+        <h2><a href="architecture.html">坚若磐石：解析妙妙云独创的多路冗余算法与架构演进</a></h2>
+        <p>深入探讨妙妙云如何通过多链路冗余技术保障业务连续性，打造坚不可摧的云端基石。</p>
+        <a href="architecture.html" class="read-more">翻阅卷宗</a>
+      </article>
+      <article class="article-card">
+        <h2><a href="optimization.html">云原生时代的性能优化：从底层网络到上层应用全链路</a></h2>
+        <p>提升系统性能的最佳实践与云网融合解决方案，突破性能瓶颈。</p>
+        <a href="optimization.html" class="read-more">翻阅卷宗</a>
+      </article>
+      <article class="article-card">
+        <h2><a href="deployment.html">自动化部署的艺术：实现高效CI/CD流水线的深度思考</a></h2>
+        <p>现代软件交付体系的核心组件与敏捷实践，加速产品迭代周期。</p>
+        <a href="deployment.html" class="read-more">翻阅卷宗</a>
+      </article>
+      <article class="article-card">
+        <h2><a href="security.html">零信任架构下的云安全防御体系建设指南</a></h2>
+        <p>应对复杂网络攻击，构建动态自适应安全防线，保护核心数据资产。</p>
+        <a href="security.html" class="read-more">翻阅卷宗</a>
+      </article>
+      <article class="article-card">
+        <h2><a href="monitoring.html">全链路可观测性：打造智能化的微服务监控平台</a></h2>
+        <p>解决分布式系统调试难题，提升运维效率与故障排查能力。</p>
+        <a href="monitoring.html" class="read-more">翻阅卷宗</a>
+      </article>
+      <article class="article-card">
+        <h2><a href="scalability.html">应对流量洪峰：高并发系统的弹性伸缩策略与实战</a></h2>
+        <p>揭秘大规模活动背后的技术支撑与资源动态调度艺术。</p>
+        <a href="scalability.html" class="read-more">翻阅卷宗</a>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="sitemap.html">网站地图</a>
+      <a href="about.html">关于我们</a>
+      <a href="terms.html">服务条款</a>
+      <a href="privacy.html">隐私政策</a>
+    </div>
+  </footer>
+</body>
+</html>
